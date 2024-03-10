@@ -11,17 +11,11 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="min-h-screen w-full flex items-start">
+    <body class="min-h-screen w-full flex items-start">           
 
-        <div class="flex flex-col items-center w-full">
-            <x-button
-            type="button"
-            text="Enviar"
-            variation= "primary"
-            size="large"
-            icon="home"
-            iconPosition="left"
-            ></x-button>
+        <x-header logo="https://icons.iconarchive.com/icons/danleech/simple/256/google-icon.png">
+        </x-header>
+
             {{ $slot }}
 
 

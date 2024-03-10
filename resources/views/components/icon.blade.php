@@ -1,1 +1,1 @@
-<i {{ $attribute->class(["material-icons"]) }}>{{ $name }}</i>
+<i {{ $attributes->class(["material-icons", "text-md" ]) }}>{{ $name }}</i>

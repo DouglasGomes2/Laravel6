@@ -1,24 +1,25 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\form;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Button extends Component
+class button extends Component
 {
     /**
      * Create a new component instance.
      */
-    public $type;
-    public $variation;
-    public $size;
-    public $icon;
-    public $iconPosition;
-    public $text;
 
-    public function __construct($type, $variation, $size, $text ,$icon  = "", $iconPosition = "")
+     public $type;
+     public $variation;
+     public $size;
+     public $icon;
+     public $iconPosition;
+     public $text;
+
+    public function __construct($type, $variation, $size, $text ="", $icon = "", $iconPosition = "")
     {
         $this->type = $type;
         $this->variation = $variation;
@@ -26,6 +27,7 @@ class Button extends Component
         $this->icon = $icon;
         $this->iconPosition = $iconPosition;
         $this->text = $text;
+
     }
 
     /**
@@ -33,6 +35,6 @@ class Button extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.button');
+        return view('components.form.button');
     }
 }
